@@ -71,8 +71,8 @@ export default function TaskTable({
         </TableHeader>
 
         <TableBody>
-          {tasks.length > 0 ? (
-            tasks.map((task) => (
+          {tasks?.length > 0 ? (
+            tasks?.map((task) => (
               <TableRow key={task.id}>
                 <TableCell className="font-medium">{task.title}</TableCell>
                 <TableCell className="max-w-xs truncate">
